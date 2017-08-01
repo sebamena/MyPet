@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cl.sebastian.mypet.Adopt">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:text="Adopta una mascota, para contribuir en la creación de conciencia sobre la Tenencia Responsable de Animales."
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_below="@id/titulo"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txttipo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:text="Tipo: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@id/titulo"
+            android:layout_marginStart="5dp"
+            android:id="@+id/tipo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txttipo1"
+            android:text="Perro"
+
+            android:drawableRight="@mipmap/iconchiguagua"
+            android:paddingRight="20dp"
+            />
+
+
+        <TextView
+            android:layout_below="@+id/tipo1"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txtnombre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:text="Raza: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@+id/tipo1"
+            android:layout_marginStart="5dp"
+            android:id="@+id/nombre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txtnombre1"
+            android:text="Chiguagua" />
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txtedad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtnombre1"
+            android:paddingStart="20dp"
+            android:text="Edad: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:text="2 Meses"
+            android:layout_toRightOf="@id/txtedad1"
+            android:layout_below="@id/txtnombre1"
+            android:id="@+id/edad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txtsexo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtedad1"
+            android:paddingStart="20dp"
+            android:text="Sexo: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:text="Hembra"
+            android:layout_toRightOf="@id/txtsexo1"
+            android:layout_below="@id/txtedad1"
+            android:id="@+id/sexo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imagen1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtsexo1"
+            android:src="@drawable/chiguagua" />
+
+
+        <!---->
+
+        <View
+            android:id="@+id/view1"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/imagen1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"/>
+
+        <TextView
+            android:layout_below="@+id/view1"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txttipo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:text="Tipo: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@+id/view1"
+            android:layout_marginStart="5dp"
+            android:id="@+id/tipo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txttipo2"
+            android:text="Gato"
+
+
+            android:drawableRight="@mipmap/iconcat1"
+            android:paddingRight="20dp"
+            />
+
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:layout_below="@id/txttipo2"
+            android:id="@+id/txtnombre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:text="Raza: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/txttipo2"
+            android:id="@+id/nombre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txtnombre2"
+            android:text="Angora" />
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txtedad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtnombre2"
+            android:paddingStart="20dp"
+            android:text="Edad: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:text="7 Meses"
+            android:layout_toRightOf="@id/txtedad2"
+            android:layout_below="@id/txtnombre2"
+            android:id="@+id/edad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txtsexo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtedad2"
+            android:paddingStart="20dp"
+            android:text="Sexo: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:text="Macho"
+            android:layout_toRightOf="@id/txtsexo2"
+            android:layout_below="@id/txtedad2"
+            android:id="@+id/sexo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imagen2"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtsexo2"
+            android:src="@drawable/gato" />
+
+
+        <!---->
+
+        <View
+            android:id="@+id/view2"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/imagen2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"/>
+
+        <TextView
+            android:layout_below="@+id/view2"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txttipo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:text="Tipo: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@+id/view2"
+            android:layout_marginStart="5dp"
+            android:id="@+id/tipo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txttipo3"
+            android:text="Perro"
+
+            android:drawableRight="@mipmap/icongerman"
+            android:paddingRight="20dp"
+
+            />
+
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:layout_below="@id/txttipo3"
+            android:id="@+id/txtnombre3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:text="Raza: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/txttipo3"
+            android:id="@+id/nombre3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txtnombre3"
+            android:text="Pastor Alemán" />
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txtedad3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtnombre3"
+            android:paddingStart="20dp"
+            android:text="Edad: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:text="2 Meses"
+            android:layout_toRightOf="@id/txtedad2"
+            android:layout_below="@id/txtnombre3"
+            android:id="@+id/edad3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txtsexo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtedad3"
+            android:paddingStart="20dp"
+            android:text="Sexo: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:text="Macho"
+            android:layout_toRightOf="@id/txtsexo3"
+            android:layout_below="@id/txtedad3"
+            android:id="@+id/sexo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imagen3"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtsexo3"
+            android:src="@drawable/perroaleman" />
+
+        <!---->
+
+
+        <View
+            android:id="@+id/view3"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/imagen3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"/>
+
+
+        <TextView
+            android:layout_below="@+id/view3"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txttipo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:text="Tipo: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@+id/view3"
+            android:layout_marginStart="5dp"
+            android:id="@+id/tipo4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txttipo4"
+            android:text="Gato"
+
+
+            android:drawableRight="@mipmap/iconcat1"
+            android:paddingRight="20dp"
+            />
+
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:layout_below="@id/txttipo4"
+            android:id="@+id/txtnombre4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:text="Raza: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/txttipo4"
+            android:id="@+id/nombre4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txtnombre4"
+            android:text="Común Europeo" />
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txtedad4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtnombre4"
+            android:paddingStart="20dp"
+            android:text="Edad: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:text="8 Meses"
+            android:layout_toRightOf="@id/txtedad3"
+            android:layout_below="@id/txtnombre4"
+            android:id="@+id/edad4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txtsexo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtedad4"
+            android:paddingStart="20dp"
+            android:text="Sexo: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:text="Hembra"
+            android:layout_toRightOf="@id/txtsexo4"
+            android:layout_below="@id/txtedad4"
+            android:id="@+id/sexo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imagen4"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtsexo4"
+            android:src="@drawable/gato2" />
+
+
+        <View
+            android:id="@+id/view4"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/imagen4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"/>
+
+
+        <!---->
+
+        <TextView
+            android:layout_below="@+id/view4"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txttipo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:text="Tipo: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@+id/view4"
+            android:layout_marginStart="5dp"
+            android:id="@+id/tipo5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txttipo5"
+            android:text="Tortuga"
+
+
+            android:drawableRight="@mipmap/iconturtle"
+            android:paddingRight="20dp"
+            />
+
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:layout_below="@id/txttipo5"
+            android:id="@+id/txtnombre5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"
+            android:text="Raza: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/txttipo5"
+            android:id="@+id/nombre5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txtnombre5"
+            android:text="Mediterránea" />
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txtedad5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtnombre5"
+            android:paddingStart="20dp"
+            android:text="Edad: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:text="1 Mes"
+            android:layout_toRightOf="@id/txtedad4"
+            android:layout_below="@id/txtnombre5"
+            android:id="@+id/edad5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"
+            android:id="@+id/txtsexo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtedad5"
+            android:paddingStart="20dp"
+            android:text="Sexo: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:text="Hembra"
+            android:layout_toRightOf="@id/txtsexo5"
+            android:layout_below="@id/txtedad5"
+            android:id="@+id/sexo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imagen5"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtsexo5"
+            android:src="@drawable/tortuga" />
+
+
+        <View
+            android:id="@+id/view5"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/imagen5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"/>
+
+
+
+
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

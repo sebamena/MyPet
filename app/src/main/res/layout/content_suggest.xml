@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cl.sebastian.mypet.SuggestActivity">
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_suggest">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:text="Porque su opinión es importante para nosotros, coméntenos cualquier sugerencia, mejora o reclamo que tenga con la aplicación."
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:layout_below="@id/titulo"
+        android:id="@+id/txtnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="Nombre"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_below="@id/txtnombre"
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu nombre"
+        android:paddingStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txtdenuncia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombre"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="Mensaje"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_below="@id/txtdenuncia"
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Ingresa tu mensaje"
+        android:paddingStart="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mensaje"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="Email"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_below="@id/txtemail"
+        android:hint="Ingresa tu email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txtcel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="Teléfono de Contacto"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/cel"
+        android:layout_below="@id/txtcel"
+        android:hint="Ingresa tu teléfono de contacto"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        />
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cel"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="ENVIAR"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+
+
+
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

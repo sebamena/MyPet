@@ -13,6 +13,8 @@
 
         <TextView
             android:id="@+id/titulo"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
             android:text="Adopta una mascota, para contribuir en la creación de conciencia sobre la Tenencia Responsable de Animales."
             android:textAlignment="center"
             android:textStyle="bold"

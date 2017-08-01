@@ -12,7 +12,7 @@
     <item
         android:icon="@mipmap/iconlove"
         android:id="@+id/love"
-        android:title="CAT"
+        android:title="LOVE"
         app:showAsAction="ifRoom"
         />
 

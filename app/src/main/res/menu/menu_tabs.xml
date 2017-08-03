@@ -2,19 +2,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="cl.sebastian.mypet.TabsActivity">
-    <item
-        android:icon="@mipmap/icondog"
-        android:id="@+id/dog"
-        android:title="DOG"
-        app:showAsAction="ifRoom"
-        />
+    <!--<item-->
+        <!--android:icon="@mipmap/icondog"-->
+        <!--android:id="@+id/dog"-->
+        <!--android:title="DOG"-->
+        <!--app:showAsAction="ifRoom"-->
+        <!--/>-->
 
-    <item
-        android:icon="@mipmap/iconlove"
-        android:id="@+id/love"
-        android:title="LOVE"
-        app:showAsAction="ifRoom"
-        />
+    <!--<item-->
+        <!--android:icon="@mipmap/iconlove"-->
+        <!--android:id="@+id/love"-->
+        <!--android:title="LOVE"-->
+        <!--app:showAsAction="ifRoom"-->
+        <!--/>-->
 
     <item
         android:icon="@mipmap/iconcat"

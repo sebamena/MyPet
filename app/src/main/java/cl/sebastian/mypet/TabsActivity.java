@@ -148,21 +148,16 @@ public class TabsActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int i) {
-            Fragment fragment;
             switch(i) {
                 case 0:
-                    fragment = new Register();
-                    break;
+                    return Register.newInstance();
                 case 1:
-                    fragment = new Adopt();
-                    break;
+                    return Adopt.newInstance();
                 case 2:
-                    fragment = new Complaint();
-                    break;
+                    return Complaint.newInstance();
                 default:
-                    return PlaceholderFragment.newInstance(i + 1);
+                    return Register.newInstance();
             }
-            return fragment;
         }
 
 

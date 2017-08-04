@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-
+import java.util.regex.Pattern;
 
 
 public class Complaint extends Fragment {
@@ -59,7 +60,7 @@ public class Complaint extends Fragment {
 
                 if(nombre.getText().toString().isEmpty()){
 
-                    Toast.makeText(getContext(),"Escriba un nombre",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(),"Escriba su nombre",Toast.LENGTH_SHORT).show();
 
 
                 }else if (denuncia.getText().toString().isEmpty()){
@@ -67,9 +68,9 @@ public class Complaint extends Fragment {
                     Toast.makeText(getContext(),"Escriba su denuncia",Toast.LENGTH_SHORT).show();
 
 
-                }else if (email.getText().toString().isEmpty()){
+                }else if (!isValidEmail(email.getText().toString())){
 
-                    Toast.makeText(getContext(),"Indique su email",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(),"Escriba un email válido",Toast.LENGTH_SHORT).show();
 
                 }else if (numerotel.getText().toString().isEmpty()){
 
@@ -88,7 +89,7 @@ public class Complaint extends Fragment {
                     intent.putExtra(Intent.EXTRA_EMAIL, new String[]
                             {"smenap@gmail.com"});
                     intent.putExtra(Intent.EXTRA_SUBJECT, "Denuncia desde APP MyPet");
-                    intent.putExtra(Intent.EXTRA_TEXT, denuncia.getText().toString());
+                    intent.putExtra(Intent.EXTRA_TEXT,"Nombre: "+ nombre.getText().toString() + "\n\n" + "Denuncia: "+denuncia.getText().toString() +"\n\n" + "Número Telefónico: " + numerotel.getText().toString());
                     startActivity(intent);
 
 
@@ -103,6 +104,11 @@ public class Complaint extends Fragment {
 
             }});
 
+    }
+
+    private boolean isValidEmail(String email) {
+        Pattern pattern = Patterns.EMAIL_ADDRESS;
+        return pattern.matcher(email).matches();
     }
 
 }

@@ -44,6 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Ingresa tu nombre"
+            android:inputType="textPersonName"
             android:paddingStart="20dp"
             />
 

@@ -3,16 +3,15 @@ package cl.sebastian.mypet;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import static java.security.AccessController.getContext;
+import java.util.regex.Pattern;
 
 public class SuggestActivity extends AppCompatActivity {
 
@@ -46,9 +45,9 @@ public class SuggestActivity extends AppCompatActivity {
                     Toast.makeText(SuggestActivity.this,"Escriba un mensaje",Toast.LENGTH_SHORT).show();
 
 
-                }else if (email.getText().toString().isEmpty()){
+                }else if (!isValidEmail(email.getText().toString())){
 
-                    Toast.makeText(SuggestActivity.this,"Indique su email",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SuggestActivity.this,"Escriba un email válido",Toast.LENGTH_SHORT).show();
 
                 }else if (numerotel.getText().toString().isEmpty()){
 
@@ -67,7 +66,8 @@ public class SuggestActivity extends AppCompatActivity {
                     intent.putExtra(Intent.EXTRA_EMAIL, new String[]
                             {"smenap@gmail.com"});
                     intent.putExtra(Intent.EXTRA_SUBJECT, "Mensaje desde APP MyPet");
-                    intent.putExtra(Intent.EXTRA_TEXT, mensaje.getText().toString());
+                    intent.putExtra(Intent.EXTRA_TEXT,"Nombre: "+ nombre.getText().toString() + "\n\n" + "Denuncia: "+mensaje.getText().toString() +"\n\n" + "Número Telefónico: " + numerotel.getText().toString());
+
                     startActivity(intent);
 
 
@@ -83,6 +83,11 @@ public class SuggestActivity extends AppCompatActivity {
             }});
 
 
+    }
+
+    private boolean isValidEmail(String email) {
+        Pattern pattern = Patterns.EMAIL_ADDRESS;
+        return pattern.matcher(email).matches();
     }
 
 }

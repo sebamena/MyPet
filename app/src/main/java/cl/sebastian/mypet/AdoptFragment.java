@@ -8,17 +8,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class Adopt extends Fragment {
+public class AdoptFragment extends Fragment {
 
 
-    public Adopt() {
+    public AdoptFragment() {
         // Required empty public constructor
     }
 
 
-    public static Adopt newInstance(){
+    public static AdoptFragment newInstance(){
 
-        return new Adopt();
+        return new AdoptFragment();
 
     }
 

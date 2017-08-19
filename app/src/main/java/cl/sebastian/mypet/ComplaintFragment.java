@@ -16,7 +16,7 @@ import android.widget.Toast;
 import java.util.regex.Pattern;
 
 
-public class Complaint extends Fragment {
+public class ComplaintFragment extends Fragment {
 
 
 
@@ -24,13 +24,13 @@ public class Complaint extends Fragment {
     private Button enviar;
 
 
-    public Complaint() {
+    public ComplaintFragment() {
         // Required empty public constructor
     }
 
-    public static Complaint newInstance(){
+    public static ComplaintFragment newInstance(){
 
-        return new Complaint();
+        return new ComplaintFragment();
 
     }
 

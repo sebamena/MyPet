@@ -12,20 +12,20 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 
-public class Register extends Fragment {
+public class RegisterFragment extends Fragment {
 
 
     private EditText txtname, txtedad, txttipo, txtpeso;
     private RadioButton macho,hembra;
     private Button guardar;
 
-    public Register() {
+    public RegisterFragment() {
         // Required empty public constructor
     }
 
-    public static Register newInstance(){
+    public static RegisterFragment newInstance(){
 
-        return new Register();
+        return new RegisterFragment();
 
     }
 

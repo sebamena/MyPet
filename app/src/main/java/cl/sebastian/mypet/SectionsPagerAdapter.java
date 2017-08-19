@@ -24,13 +24,13 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int i) {
         switch (i) {
             case 0:
-                return Register.newInstance();
+                return AdoptFragment.newInstance();
             case 1:
-                return Adopt.newInstance();
+                return RegisterFragment.newInstance();
             case 2:
-                return Complaint.newInstance();
+                return ComplaintFragment.newInstance();
             default:
-                return Register.newInstance();
+                return RegisterFragment.newInstance();
         }
     }
 

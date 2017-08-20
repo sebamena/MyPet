@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cl.sebastian.mypet.AddPetActivity">
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_addpet">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Complete todos los datos a continuación:"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:layout_below="@id/titulo"
+        android:id="@+id/txtnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="Nombre Mascota"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_below="@id/txtnombre"
+        android:id="@+id/nameownerTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa nombre de mascota"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameownerTv"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="Tipo de Mascota"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_below="@id/tipo"
+        android:id="@+id/phoneownerTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Ingresa tipo de mascota"
+        android:paddingStart="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/breed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneownerTv"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="Raza de Mascota"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/breedEt"
+        android:layout_below="@id/breed"
+        android:hint="Ingresa raza de mascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breedEt"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="Género Mascota"
+        android:textStyle="bold" />
+
+
+    <Spinner
+
+        android:paddingTop="20dp"
+        android:paddingStart="12dp"
+        android:layout_below="@id/genre"
+        android:id="@+id/genre_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genre_spinner"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="Edad Mascota"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ageEt"
+        android:layout_below="@id/age"
+        android:hint="Ingresa edad de mascota en meses"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/nameowner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageEt"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="Nombre Dueño Mascota"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nameownerEt"
+        android:layout_below="@id/nameowner"
+        android:hint="Ingresa nombre de dueño de mascota"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/phoneowner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameownerEt"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:text="Teléfono de Contacto Dueño Mascota"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/phoneownerEt"
+        android:layout_below="@id/phoneowner"
+        android:hint="Ingresa teléfono de dueño de mascota"
+        android:inputType="number"
+        android:maxLength="8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        />
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneownerEt"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="GUARDAR"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+
+
+
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

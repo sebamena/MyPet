@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 /**
- * Created by LUIS on 03-08-2017.
+ * Created by Sebastián Mena on 03-08-2017.
  */
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
@@ -24,7 +24,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int i) {
         switch (i) {
             case 0:
-                return AdoptFragment.newInstance();
+                //return AdoptFragment.newInstance();
+                return ListPetFragment.newInstance();
             case 1:
                 return RegisterFragment.newInstance();
             case 2:
@@ -45,9 +46,9 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "Registrar Mascota";
+                return "Mascotas en Adopción";
             case 1:
-                return "Adoptar Mascota";
+                return "Inscribir Mascota";
             case 2:
                 return "Denuncia";
         }

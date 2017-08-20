@@ -97,4 +97,6 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="title_activity_suggest">Sugerencias o Reclamos</string>
+    <string name="title_addpet">Registra tu mascota en adopción</string>
+    <string name="title_detailpet">Datos de Contacto</string>
 </resources>

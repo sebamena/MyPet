@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:id="@+id/txttipo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:text="Nombre Mascota: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_below="@id/titulo"
+        android:layout_marginStart="5dp"
+        android:id="@+id/nameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/txttipo1"
+        android:text="Perro"
+        />
+
+
+    <TextView
+        android:layout_below="@+id/nameTv"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:id="@+id/txtnombre1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:text="Tipo: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_below="@+id/nameTv"
+        android:layout_marginStart="5dp"
+        android:id="@+id/typeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/txtnombre1"
+        android:text="Chiguagua" />
+
+    <TextView
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:id="@+id/txtedad1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnombre1"
+        android:paddingStart="20dp"
+        android:text="Raza: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:text="2 Meses"
+        android:layout_toRightOf="@id/txtedad1"
+        android:layout_below="@id/txtnombre1"
+        android:id="@+id/breedTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:id="@+id/txtsexo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtedad1"
+        android:paddingStart="20dp"
+        android:text="Edad: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:text="Hembra"
+        android:layout_toRightOf="@id/txtsexo1"
+        android:layout_below="@id/txtedad1"
+        android:id="@+id/agegTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:id="@+id/genreTv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtsexo1"
+        android:paddingStart="20dp"
+        android:text="Género: "
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:text="Hembra"
+        android:layout_toRightOf="@id/genreTv1"
+        android:layout_below="@id/txtsexo1"
+        android:id="@+id/genreTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <!---->
+
+    <View
+        android:id="@+id/view1"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/genreTv1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark"/>
+
+
+
+</RelativeLayout>

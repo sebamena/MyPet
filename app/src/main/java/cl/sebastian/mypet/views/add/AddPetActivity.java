@@ -1,4 +1,4 @@
-package cl.sebastian.mypet;
+package cl.sebastian.mypet.views.add;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import cl.sebastian.mypet.R;
+import cl.sebastian.mypet.adapters.PetAdapter;
 import cl.sebastian.mypet.models.Pet;
 
 public class AddPetActivity extends AppCompatActivity implements AddPetinterface {
@@ -96,7 +98,7 @@ public class AddPetActivity extends AppCompatActivity implements AddPetinterface
                     pet.setType(type.getText().toString());
                     pet.setBreed(breed.getText().toString());
                     pet.setGenre(spinner.getSelectedItem().toString());
-                    pet.setAge(Integer.parseInt(age.getText().toString()));
+                    pet.setAge(Long.parseLong(age.getText().toString()));
                     pet.setNameowner(nameowner.getText().toString());
                     pet.setPhoneowner(Integer.parseInt(phoneowner.getText().toString()));
                     pet.save();
@@ -112,6 +114,8 @@ public class AddPetActivity extends AppCompatActivity implements AddPetinterface
 
 
                     Toast.makeText(getBaseContext(),"Registro Exitoso",Toast.LENGTH_SHORT).show();
+
+                    finish();
 
 
                 }

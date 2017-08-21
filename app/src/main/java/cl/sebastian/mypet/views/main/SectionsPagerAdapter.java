@@ -1,8 +1,11 @@
-package cl.sebastian.mypet;
+package cl.sebastian.mypet.views.main;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import cl.sebastian.mypet.ComplaintFragment;
+import cl.sebastian.mypet.RegisterFragment;
 
 /**
  * Created by Sebastián Mena on 03-08-2017.

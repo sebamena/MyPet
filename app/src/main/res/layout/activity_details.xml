@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cl.sebastian.mypet.DetailsActivity">
+    tools:context="cl.sebastian.mypet.views.details.DetailsActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -21,12 +21,11 @@
         android:id="@+id/txtnombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="20dp"
         android:textColor="@color/white"
         android:background="@color/colorAccent"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:text="Nombre dueño de mascota"
+        android:text="Nombre dueño de la mascota"
         android:textStyle="bold" />
 
     <TextView
@@ -38,7 +37,6 @@
         android:id="@+id/nameownerTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         />
@@ -51,10 +49,9 @@
         android:layout_below="@id/nameownerTv"
         android:textColor="@color/white"
         android:background="@color/colorAccent"
-        android:paddingStart="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:text="Teléfono de contacto dueño de mascota"
+        android:text="Teléfono de contacto del dueño de la mascota"
         android:textStyle="bold" />
 
     <TextView
@@ -66,7 +63,6 @@
         android:id="@+id/phoneownerTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         />

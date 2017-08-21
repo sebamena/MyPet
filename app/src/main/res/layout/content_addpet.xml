@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="cl.sebastian.mypet.AddPetActivity">
+    tools:context="cl.sebastian.mypet.views.add.AddPetActivity">
 
 <RelativeLayout
 
@@ -42,7 +42,7 @@
         android:id="@+id/nameownerTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ingresa nombre de mascota"
+        android:hint="Ingresa nombre de la mascota"
         android:inputType="textPersonName"
         android:paddingStart="20dp"
         />
@@ -81,7 +81,7 @@
     <EditText
         android:id="@+id/breedEt"
         android:layout_below="@id/breed"
-        android:hint="Ingresa raza de mascota"
+        android:hint="Ingresa raza de la mascota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
@@ -106,7 +106,8 @@
         android:layout_below="@id/genre"
         android:id="@+id/genre_spinner"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        />
 
 
     <TextView
@@ -122,7 +123,7 @@
     <EditText
         android:id="@+id/ageEt"
         android:layout_below="@id/age"
-        android:hint="Ingresa edad de mascota en meses"
+        android:hint="Ingresa edad de la mascota en meses"
         android:inputType="phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -136,13 +137,13 @@
         android:layout_below="@id/ageEt"
         android:paddingStart="20dp"
         android:paddingTop="20dp"
-        android:text="Nombre Dueño Mascota"
+        android:text="Nombre Dueño de la Mascota"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/nameownerEt"
         android:layout_below="@id/nameowner"
-        android:hint="Ingresa nombre de dueño de mascota"
+        android:hint="Ingresa nombre del dueño"
         android:inputType="textPersonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -156,13 +157,13 @@
         android:layout_below="@id/nameownerEt"
         android:paddingStart="20dp"
         android:paddingTop="20dp"
-        android:text="Teléfono de Contacto Dueño Mascota"
+        android:text="Teléfono de Contacto del dueño de la mascota"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/phoneownerEt"
         android:layout_below="@id/phoneowner"
-        android:hint="Ingresa teléfono de dueño de mascota"
+        android:hint="Ingresa teléfono de contacto"
         android:inputType="number"
         android:maxLength="8"
         android:layout_width="match_parent"

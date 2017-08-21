@@ -1,4 +1,4 @@
-package cl.sebastian.mypet;
+package cl.sebastian.mypet.views.main;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import cl.sebastian.mypet.R;
+import cl.sebastian.mypet.views.add.AddPetActivity;
 
 public class TabsActivity extends AppCompatActivity {
 

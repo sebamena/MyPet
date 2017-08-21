@@ -1,4 +1,4 @@
-package cl.sebastian.mypet;
+package cl.sebastian.mypet.views.add;
 
 /**
  * Created by Sebastián Mena on 19/08/2017.

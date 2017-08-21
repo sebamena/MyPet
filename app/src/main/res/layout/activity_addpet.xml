@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cl.sebastian.mypet.AddPetActivity">
+    tools:context="cl.sebastian.mypet.views.add.AddPetActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

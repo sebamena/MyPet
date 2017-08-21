@@ -1,4 +1,4 @@
-package cl.sebastian.mypet;
+package cl.sebastian.mypet.views.main;
 
 
 import android.content.Intent;
@@ -10,6 +10,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import cl.sebastian.mypet.R;
+import cl.sebastian.mypet.adapters.PetAdapter;
+import cl.sebastian.mypet.views.add.AddPetinterface;
+import cl.sebastian.mypet.views.details.DetailsActivity;
 
 
 /**

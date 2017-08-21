@@ -1,4 +1,4 @@
-package cl.sebastian.mypet;
+package cl.sebastian.mypet.adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,7 +8,10 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import cl.sebastian.mypet.R;
+import cl.sebastian.mypet.data.Queries;
 import cl.sebastian.mypet.models.Pet;
+import cl.sebastian.mypet.views.add.AddPetinterface;
 
 /**
  * Created by Sebastián Mena on 19/08/2017.
@@ -39,10 +42,10 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.ViewHolder> {
         holder.txtname.setText(listpets.getName());
         holder.txttype.setText(listpets.getType());
         holder.txtbreed.setText(listpets.getBreed());
-        holder.txtage.setText(String.valueOf(listpets.getAge()));
+        holder.txtage.setText(String.valueOf(listpets.getAge()) + " meses");
         holder.txtgenre.setText(listpets.getGenre());
 
-        holder.txtname.setOnClickListener(new View.OnClickListener() {
+        /*holder.txtname.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -50,7 +53,16 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.ViewHolder> {
                 listener.clickedID(auxPending.getId());
 
             }
+        });*/
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Pet auxPending = pets.get(holder.getAdapterPosition());
+                listener.clickedID(auxPending.getId());
+            }
         });
+
 
     }
 
@@ -59,10 +71,6 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.ViewHolder> {
         return pets.size();
     }
 
-    public void update(Pet pet) {
-        pets.add(pet);
-        notifyDataSetChanged();
-    }
 
     public void updateAll(){
 
@@ -88,6 +96,8 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.ViewHolder> {
             txtbreed = (TextView) itemView.findViewById(R.id.breedTv);
             txtage = (TextView) itemView.findViewById(R.id.agegTv);
             txtgenre = (TextView) itemView.findViewById(R.id.genreTv);
+
+
 
 
         }

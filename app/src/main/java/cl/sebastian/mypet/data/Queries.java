@@ -1,4 +1,4 @@
-package cl.sebastian.mypet;
+package cl.sebastian.mypet.data;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,12 +11,6 @@ import cl.sebastian.mypet.models.Pet;
 
 public class Queries {
 
-    public List<Pet> pendings() {
-
-        List<Pet> pendingList = Pet.listAll(Pet.class);
-
-        return pendingList;
-    }
 
 
     public List<Pet> listall() {

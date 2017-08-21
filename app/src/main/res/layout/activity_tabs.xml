@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="cl.sebastian.mypet.TabsActivity">
+    tools:context="cl.sebastian.mypet.views.main.TabsActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -55,6 +55,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@mipmap/iconfootprint2" />
+        app:srcCompat="@mipmap/iconpetprimary" />
 
 </android.support.design.widget.CoordinatorLayout>

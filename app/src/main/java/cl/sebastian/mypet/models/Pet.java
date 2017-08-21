@@ -8,13 +8,14 @@ import com.orm.SugarRecord;
 
 public class Pet extends SugarRecord {
 
-    private String name,type,breed,genre,nameowner,date;
-    private int age,phoneowner;
+    private String name,type,breed,genre,nameowner;
+    private int phoneowner;
+    private long age;
 
     public Pet() {
     }
 
-    public Pet(String name, String type, String breed, String genre, String nameowner, int age, int phoneowner) {
+    public Pet(String name, String type, String breed, String genre, String nameowner, long age, int phoneowner) {
         this.name = name;
         this.type = type;
         this.breed = breed;
@@ -65,11 +66,11 @@ public class Pet extends SugarRecord {
         this.nameowner = nameowner;
     }
 
-    public int getAge() {
+    public long getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(long age) {
         this.age = age;
     }
 

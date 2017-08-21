@@ -1,3 +1,3 @@
 # MyPet
 
-Apliccación para el Curso de Android de Desafío Latam.
+Aplicación para el Curso de Android de Desafío Latam.

@@ -1,3 +1,3 @@
 # MyPet
 
-Primera Prueba App Android para Desafío Latam.
+Apliccación para el Curso de Android de Desafío Latam.
